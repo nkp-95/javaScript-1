@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습문제</title>
+  <style>
+    body{
+      font-size: 1.2em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>배수일까 아닐까</h2>
+  <script>
+    var num1 = prompt("대상 숫자를 입력하시오."); //parseInt=정수로 변환
+    var num2 = prompt("나눌 숫자를 입력하시오.");
+    if(num1 !== null){
+      if(num1 !== ""){
+      alert(num1%num2);
+        if(num1 % num2 === 0){
+          document.write(num1 + "은(는) " + num2 + "의 배수 입니다.");
+        }else{  // if (num % num2 !== 0)
+          document.write(num1 + "은(는) " + num2 + "의 배수가 아닙니다.");
+        }
+          
+      }else{
+        document.write("잘못된 입력입니다.");
+      }
+    }else{
+      document.write("입력 값이 없습니다.");
+    }
+  </script>
+</body>
+</html>
